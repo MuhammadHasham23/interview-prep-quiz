@@ -1,0 +1,21 @@
+/* RoundTimer.css */
+.timer-container {
+  display: flex;
+  justify-content: end;
+}
+
+.timer-circle-bg {
+  fill: none;
+  stroke: #ddd;
+}
+
+.timer-circle {
+  fill: none;
+  stroke: #4caf50;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+  font-size: 24px;
+  fill: #333;
+}
