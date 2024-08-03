@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import { Question } from '@/types/Questions';
 import RoundTimer from './Timer/Timer';
 
-interface QuestionWrapper {
+interface QuestionWrapperProps {
   question: Question;
   onSubmit: (selectedOption: string[]) => void;
 }
 
-const QuestionWrapper: React.FC<QuestionWrapper> = ({ question, onSubmit }) => {
+const QuestionWrapper: React.FC<QuestionWrapperProps> = ({ question, onSubmit }) => {
   const [selectedOption, setSelectedOption] = useState<string[]>([]);
 
   const isMultipleCorrectAnswers = Boolean(

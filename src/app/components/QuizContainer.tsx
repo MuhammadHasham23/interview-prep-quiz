@@ -1,9 +1,8 @@
 'use client';
 import { Question } from '@/types/Questions';
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import QuestionsSidebar from './QuestionsSidebar';
 import QuestionWrapper from './Question';
-import RoundTimer from './Timer/Timer';
 import Results from './Results';
 
 const QuizContainer: React.FC<{ questions: Question[] }> = ({ questions }) => {

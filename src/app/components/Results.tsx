@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import { Question } from '@/types/Questions';
 
-interface ResultsInterface {
+interface ResultsInterfaceProps {
   correctQuestions: Question[];
   questions: Question[];
 }
 
-const Results: React.FC<ResultsInterface> = ({
+const Results: React.FC<ResultsInterfaceProps> = ({
   correctQuestions,
   questions,
 }) => {
