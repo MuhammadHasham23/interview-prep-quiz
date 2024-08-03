@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure, here's a comprehensive README for your interactive Linux interview quiz app:
 
-## Getting Started
+---
 
-First, run the development server:
+# Linux Interview Quiz App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Linux Interview Quiz App is an interactive tool designed to help users prepare for Linux job interviews. The app presents a series of questions, each of which may have one or more correct answers. Users are given a limited amount of time to respond to each question. At the end of the quiz, the app provides a summary of the user's performance, highlighting the correct answers for any questions that were answered incorrectly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
+We use a public quiz API to fetch question and answers. `NEXT_PUBLIC_API_KEY` needs to be provided.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Timed Questions**: Each question must be answered within 45 seconds.
+- **Multiple Correct Answers**: Questions may have one or more correct answers.
+- **Performance Summary**: After completing the quiz, users receive a summary of their results.
+- **Answer Review**: Correct answers are highlighted for any questions that were answered incorrectly.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To install and run the Linux Interview Quiz App locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/linux-interview-quiz-app.git
+    cd linux-interview-quiz-app
+    ```
 
-## Deploy on Vercel
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start the App**:
+    ```bash
+    npm dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+Once the app is running, you can access it in your web browser at `http://localhost:3000`. The quiz will start automatically, and you will have 45 seconds to answer each question. After answering all the questions, you will see a summary of your performance, including the number of correct answers and the correct answers for any questions you got wrong.
+
+## Contributing
+
+We welcome contributions to the Linux Interview Quiz App! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
